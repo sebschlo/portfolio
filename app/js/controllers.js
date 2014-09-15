@@ -1,14 +1,15 @@
 'use strict';
 
-angular.module('myApp.view1', ['ngRoute'])
+var portControllers = angular.module('portControllers', []);
 
-.config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/view1', {
-    templateUrl: '../views/project.html',
-    controller: 'View1Ctrl'
-  });
-}])
 
-.controller('View1Ctrl', [function() {
+
+portControllers.controller('homeCtrl', [function() {
+
+}]);
+
+
+
+portControllers.controller('projectCtrl', [function() {
 
 }]);
